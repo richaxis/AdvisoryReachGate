@@ -1,0 +1,12 @@
+{
+  "name": "advisory-reach-gate",
+  "version": "0.1.0",
+  "description": "Evidence-grounded advisory reachability admission and fenced worker leases for GenLayer",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "check": "python scripts/check_contract.py",
+    "test": "python -m unittest discover -s tests/unit && python -m unittest discover -s tests/direct",
+    "lint": "genvm-lint check contracts/AdvisoryReachGate.py"
+  }
+}
